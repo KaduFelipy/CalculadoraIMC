@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    color: #f0f0f0;
+    font-size: 16px;
+    font-family: "Rowdies", sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    border: none;
+}
+
+body {
+    background-color: darkblue;
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    padding: 5vh 5vw;
+    background: linear-gradient( darkblue 0%, blue 25%, cyan 50%,blue 75%, darkblue 100%);
+    margin-bottom: 5vh;
+}
+
+header h1 {
+    color: #000;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+main {
+    background: transparent;
+    width: 100%;
+}
+
+main section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+main section input {
+    padding: 2vh 6vw;
+    background: transparent;
+    border: 2px solid #f0f0f0;
+    border-radius: 10px;    
+}
+
+main section input::-webkit-inner-spin-button, main section input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+

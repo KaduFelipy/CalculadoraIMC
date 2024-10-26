@@ -1,19 +1,18 @@
 const botao = document.getElementById('botao');
-const resultado = document.getElementsByClassName('resultado');
+const resultado = document.querySelector('.resultado');
+let imc = 0;
 
-resultado.textContent = 'teste;'
-// resultado.innerHTML =
 
 
 botao.onclick = calcularIMC;
 
-function calcularIMC (peso, altura) {
+function calcularIMC () {
     let peso = document.getElementById('peso').value;
     let altura = document.getElementById('altura').value;
-    let imc = 0;
+    
 
     imc = peso/(altura^2);
-
+    resultado.textContent = imc.toFixed(0);
 }
 
 
