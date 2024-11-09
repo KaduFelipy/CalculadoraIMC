@@ -12,27 +12,28 @@
 }
 
 body {
-    background-color: darkblue;
-    width: 100vw;
-    height: 100vh;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
-header {
-    padding: 5vh 5vw;
-    background: linear-gradient( darkblue 0%, blue 25%, cyan 50%,blue 75%, darkblue 100%);
-    margin-bottom: 5vh;
+
+
+main {
+    width: 100%;
 }
 
 header h1 {
-    color: #000;
+    position: relative;
+    color: #c0c0c0;
+    text-shadow: 5px 5px 10px #000;
     text-align: center;
-    font-size: 3rem;
+    font-size: 5rem;
     font-weight: bolder;
-}
-
-main {
-    background: transparent;
-    width: 100%;
+    margin: 10vh auto;
 }
 
 main section {
@@ -41,16 +42,66 @@ main section {
     align-items: center;
     flex-direction: column;
     gap: 5vh;
+
+}
+
+#bg-main{
+    position: fixed;
+    overflow: hidden;
+
+    max-width: auto;
+    max-height: auto;
 }
 
 main section input {
+    position: relative;
     padding: 2vh 6vw;
     background: transparent;
     border: 2px solid #f0f0f0;
     border-radius: 10px;    
+    box-shadow: #000 10px 5px 10px;
 }
 
 main section input::-webkit-inner-spin-button, main section input::-webkit-outer-spin-button {
     -webkit-appearance: none;
 }
 
+main section input[type=button] {
+    cursor: pointer;
+}
+main section input[type=button]:hover {
+    text-decoration: underline;
+    font-size: 1.2rem;
+}
+
+.texto-resultado{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.paragrafo {
+    text-align: center;
+    font-size: 5rem;
+    color: #f49f1c;
+}
+
+footer {
+    text-align: center;
+}
+
+.yellow {
+    color: yellow;
+    font-weight: bold;
+}
+.orange {
+    color: orange;
+    font-weight: bold;
+}
+.red {
+    color: red;
+    font-weight: bold;
+}
+.green {
+    color: green;
+    font-weight: bold;
+}
